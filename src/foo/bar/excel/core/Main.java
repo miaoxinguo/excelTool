@@ -27,6 +27,7 @@ public class Main {
      */
     private void setEnmu(Properties p) {
         ColumnIndex.last_month_gy.setIndex(Integer.valueOf(p.getProperty("column_index_gy_last_month")));
+        ColumnIndex.last_month_aq.setIndex(Integer.valueOf(p.getProperty("column_index_aq_last_month")));
         ColumnIndex.last_month_sb.setIndex(Integer.valueOf(p.getProperty("column_index_sb_last_month")));
         ColumnIndex.last_month_6s.setIndex(Integer.valueOf(p.getProperty("column_index_6s_last_month")));
         ColumnIndex.last_month_ldjl.setIndex(Integer.valueOf(p.getProperty("column_index_ldjl_last_month")));
@@ -34,6 +35,7 @@ public class Main {
         ColumnIndex.gy.setIndex(Integer.valueOf(p.getProperty("column_index_gy")));
         ColumnIndex.zl.setIndex(Integer.valueOf(p.getProperty("column_index_zl")));
         ColumnIndex.aq_base.setIndex(Integer.valueOf(p.getProperty("column_index_aq_base")));
+        ColumnIndex.aq.setIndex(Integer.valueOf(p.getProperty("column_index_aq")));
         ColumnIndex.sb_base.setIndex(Integer.valueOf(p.getProperty("column_index_sb_base")));
         ColumnIndex.sb.setIndex(Integer.valueOf(p.getProperty("column_index_sb")));
         ColumnIndex.ss_base.setIndex(Integer.valueOf(p.getProperty("column_index_6s_base")));

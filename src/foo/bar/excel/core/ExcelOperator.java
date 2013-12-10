@@ -65,15 +65,18 @@ public class ExcelOperator {
                     // 设置各项加减分的值
                     targetRow.getCell(ColumnIndex.zl.getIndex()).setCellValue(templateRow.getCell(1).getNumericCellValue());  // 质量
                     targetRow.getCell(ColumnIndex.gy.getIndex()).setCellValue(templateRow.getCell(2).getNumericCellValue());  // 工艺
-                    targetRow.getCell(ColumnIndex.sb.getIndex()).setCellValue(templateRow.getCell(3).getNumericCellValue());  // 设备
-                    targetRow.getCell(ColumnIndex.ss.getIndex()).setCellValue(templateRow.getCell(4).getNumericCellValue());  // 6s
-                    targetRow.getCell(ColumnIndex.ldjl.getIndex()).setCellValue(templateRow.getCell(5).getNumericCellValue());  // 劳动纪律
-                    targetRow.getCell(ColumnIndex.hlhjy.getIndex()).setCellValue(templateRow.getCell(6).getNumericCellValue());  // 合理化建议
+                    targetRow.getCell(ColumnIndex.aq.getIndex()).setCellValue(templateRow.getCell(3).getNumericCellValue());  // 安全
+                    targetRow.getCell(ColumnIndex.sb.getIndex()).setCellValue(templateRow.getCell(4).getNumericCellValue());  // 设备
+                    targetRow.getCell(ColumnIndex.ss.getIndex()).setCellValue(templateRow.getCell(5).getNumericCellValue());  // 6s
+                    targetRow.getCell(ColumnIndex.ldjl.getIndex()).setCellValue(templateRow.getCell(6).getNumericCellValue());  // 劳动纪律
+                    targetRow.getCell(ColumnIndex.hlhjy.getIndex()).setCellValue(templateRow.getCell(7).getNumericCellValue());  // 合理化建议
                     
                     // 设置各项基础分
                     if(sourceRow != null){
                         double gy = sourceRow.getCell(ColumnIndex.last_month_gy.getIndex()).getNumericCellValue();
                         targetRow.getCell(ColumnIndex.gy_base.getIndex()).setCellValue(gy);  // 工艺
+                        double aq = sourceRow.getCell(ColumnIndex.last_month_aq.getIndex()).getNumericCellValue();
+                        targetRow.getCell(ColumnIndex.aq_base.getIndex()).setCellValue(aq);  // 安全
                         double sb = sourceRow.getCell(ColumnIndex.last_month_sb.getIndex()).getNumericCellValue();
                         targetRow.getCell(ColumnIndex.sb_base.getIndex()).setCellValue(sb);  // 设备
                         double ss = sourceRow.getCell(ColumnIndex.last_month_6s.getIndex()).getNumericCellValue();

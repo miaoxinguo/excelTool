@@ -2,6 +2,7 @@ package foo.bar.excel.core;
 
 public enum ColumnIndex {
     last_month_gy,
+    last_month_aq,
     last_month_sb,
     last_month_6s,
     last_month_ldjl,
@@ -9,6 +10,7 @@ public enum ColumnIndex {
     zl,
     gy,
     aq_base,
+    aq,
     sb_base,
     sb,
     ss_base,
